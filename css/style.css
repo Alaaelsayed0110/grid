@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bars{
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px;
+}
+.bars i{
+    font-size: 40px;
+    color: grey;
+    cursor: pointer;
+}
+.bars i:hover::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(128, 128, 128, 0.427);
+    top: 20px;
+    right: 20px;
+    z-index: -1;
+}
+.text{
+    text-align: center;
+}
+.text h1{
+    font-size: 35px;
+    color: rgba(128, 128, 128, 0.995);
+}
+.text P{
+    padding-bottom: 30px;
+    color: #777;
+}
+.text button{
+    padding: 10px 30px;
+    color: white;
+    background-color: grey;
+    border: none;
+    margin-bottom: 20px;
+}
+.text button:hover{
+    background-color: rgba(128, 128, 128, 0.626);
+    outline: none;
+    border: none;
+}
+.menu{
+    height:100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background-color: black;
+    color:rgba(255, 255, 255, 0.211);
+    display: none;
+}
+.menu .icon{
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px;
+}
+.menu i{
+    font-size: 40px;
+    color: grey;
+    cursor: pointer;
+    position: relative;
+}
+.menu i:hover::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(128, 128, 128, 0.427);
+    top: -20px;
+    right: -10px;
+    z-index: -1;
+}
+.menu .content{
+text-align: center;
+padding-top: 50px;
+}
+.menu .content h3{
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.menu .content h3:hover{
+    color: white;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);   
+    row-gap: 20px;
+    padding: 10px;
+}
+@media (max-width:768px){
+    .container{
+        grid-template-columns: 1fr;  
+    }
+}
+.container .first-image{
+    display: grid;
+    /* gap: 20px; */
+}
+.container .second-image{
+    display: grid;
+    /* gap: 20px; */
+}
+.container .third-image{
+    display: grid;
+    /* gap: 20px; */
+}
+.container img{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: -7px;
+}
+
+.footer{
+    background-color: rgba(128, 128, 128, 0.086);
+    width: 100%;
+    padding: 100px;
+    margin-top: 130px;
+    text-align: center;
+}
+.footer i{
+    color: ;
+    z-index: 1;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.footer i:hover{
+    color: rgba(128, 128, 128, 0.508);
+}
